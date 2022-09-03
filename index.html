@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monserrat">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <header>
+        <h2>Libreria "La Salvadoreña"</h2>
+            <h3>Precio de los libros: $100</h3>
+            <h3>Precio de los cuadernos: $15.50</h3>
+            <h3>Precio de las plumas: $2.35</h3>
+    </header>
+
+    <section class="contenedor">
+            <h4>¿Cúantos libros fueron vendidos?</h4>
+            <input type="number" id="numLibros" min="1" value="0"/>
+            
+            <h4>¿Cúantos cuadernos fueron vendidos?</h4>
+            <input type="number" id="numCuadernos" min="1" value="0"/>
+            
+            <h4>¿Cúantas plumas fueron vendidos?</h4>
+            <input type="number" id="numPlumas" min="1" value="0"/>
+
+            <input type="button" name="btnejecutar" id="btnejecutar" value="Realizar Sumatoria"/>
+            <input type="button" name="btnreiniciar" id="btnreiniciar" value="Reiniciar"/>
+    </section>
+
+    <section class="tabla">
+        <table>
+            <tr>
+                <td>Monto total de libros vendidos:</td>
+                <td id="txtTotalLibros">$</td>
+           </tr>
+            <tr>
+                <td>Monto total de cuadernos vendidos:</td>
+                <td id="txtTotalCuadernos">$</td>
+            </tr>
+            <tr>
+                <td>Monto total de plumas vendidas:</td>
+                <td id="txtTotalPlumas">$</td>
+            </tr>
+            <tr>
+                <td>Monto total de productos vendidos:</td>
+                <td id="txtTotalFinal">$</td>
+            </tr>
+        </table>
+    </section>
+    <Script src="js/tienda.js"></Script>
+</body>
+</html>
